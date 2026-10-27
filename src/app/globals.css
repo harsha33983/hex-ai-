@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-surface: #e2e2e9;
+  --color-on-tertiary-fixed: #001f26;
+  --color-surface-variant: #33353a;
+  --color-secondary-fixed-dim: #ffb95f;
+  --color-on-tertiary-fixed-variant: #004e5c;
+  --color-on-primary-fixed-variant: #832700;
+  --color-primary: #ffb59d;
+  --color-on-tertiary-container: #00323b;
+  --color-surface-bright: #37393f;
+  --color-secondary-container: #ee9800;
+  --color-on-background: #e2e2e9;
+  --color-on-primary-container: #561600;
+  --color-inverse-surface: #e2e2e9;
+  --color-background: #111318;
+  --color-tertiary: #4cd7f6;
+  --color-tertiary-fixed: #acedff;
+  --color-primary-container: #ff5e1e;
+  --color-on-error: #690005;
+  --color-surface-container-low: #1a1b21;
+  --color-outline: #aa897f;
+  --color-on-primary-fixed: #390c00;
+  --color-on-secondary-fixed-variant: #653e00;
+  --color-error-container: #93000a;
+  --color-on-secondary: #472a00;
+  --color-secondary-fixed: #ffddb8;
+  --color-on-secondary-container: #5b3800;
+  --color-surface-container: #1e1f25;
+  --color-on-surface-variant: #e3beb3;
+  --color-surface: #111318;
+  --color-on-tertiary: #003640;
+  --color-secondary: #ffb95f;
+  --color-surface-tint: #ffb59d;
+  --color-on-error-container: #ffdad6;
+  --color-on-primary: #5d1900;
+  --color-surface-dim: #111318;
+  --color-on-secondary-fixed: #2a1700;
+  --color-primary-fixed: #ffdbd0;
+  --color-surface-container-high: #282a2f;
+  --color-inverse-on-surface: #2e3036;
+  --color-primary-fixed-dim: #ffb59d;
+  --color-outline-variant: #5b4138;
+  --color-error: #ffb4ab;
+  --color-tertiary-container: #00a2bd;
+  --color-tertiary-fixed-dim: #4cd7f6;
+  --color-surface-container-highest: #33353a;
+  --color-surface-container-lowest: #0c0e13;
+  --color-inverse-primary: #ab3500;
+  --color-court-blaze: #ff5e1e;
+  --color-arena-amber: #f59e0b;
+
+  --spacing-gutter-tablet: 0.75rem;
+  --spacing-space-xl: 2rem;
+  --spacing-gutter-desktop: 1.25rem;
+  --spacing-margin: 1rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-margin-tablet: 1.5rem;
+  --spacing-margin-desktop: 2rem;
+  --spacing-gutter: 1rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-lg: 1.25rem;
+  --spacing-space-2xl: 3rem;
+
+  --font-body-lg: var(--font-geist-sans), system-ui, sans-serif;
+  --font-headline-sm: var(--font-geist-sans), system-ui, sans-serif;
+  --font-headline-xl-mobile: var(--font-geist-sans), system-ui, sans-serif;
+  --font-label-sm: var(--font-geist-sans), system-ui, sans-serif;
+  --font-body-md: var(--font-geist-sans), system-ui, sans-serif;
+  --font-metric-md: var(--font-geist-sans), system-ui, sans-serif;
+  --font-metric-xl: var(--font-geist-sans), system-ui, sans-serif;
+  --font-headline-lg: var(--font-geist-sans), system-ui, sans-serif;
+  --font-body-sm: var(--font-geist-sans), system-ui, sans-serif;
+  --font-headline-xl: var(--font-geist-sans), system-ui, sans-serif;
+  --font-code-telemetry: var(--font-geist-mono), monospace;
+  --font-headline-md: var(--font-geist-sans), system-ui, sans-serif;
+  --font-display-hero: var(--font-geist-sans), system-ui, sans-serif;
+  --font-display-hero-mobile: var(--font-geist-sans), system-ui, sans-serif;
+  --font-label-md: var(--font-geist-sans), system-ui, sans-serif;
+  --font-metric-lg: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #111318;
+    color: #e2e2e9;
+    font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+/* Material Symbols Outlined styling */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Typography Scale Utilities */
+.text-display-hero {
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  line-height: 1.08;
+}
+.text-headline-xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-headline-lg {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-headline-md {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-metric-xl {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.text-metric-lg {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+.text-metric-md {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.text-label-md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-label-sm {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+}
+.text-body-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-body-md {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+.text-body-sm {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+/* Selection and scrollbar */
+::selection {
+  background-color: #ff5e1e;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111318;
+}
+::-webkit-scrollbar-thumb {
+  background: #282a2f;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5e1e;
+}
+
+/* Pulse animation utility */
+@keyframes courtPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
+}
+
+.animate-court-pulse {
+  animation: courtPulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Telemetry grid background */
+.telemetry-grid {
+  background-image: radial-gradient(#ff5e1e 1px, transparent 1px);
+  background-size: 28px 28px;
+}
