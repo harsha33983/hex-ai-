@@ -200,7 +200,7 @@ export default function SignInPage() {
                 </p>
                 <div className="flex flex-col gap-3">
                   <Link
-                    href="/"
+                    href="/dashboard"
                     className="w-full py-3 rounded-lg bg-[#FF5E1E] text-white font-semibold text-sm hover:bg-[#e04e12] transition-colors shadow-lg"
                   >
                     Enter Operating Console

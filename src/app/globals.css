@@ -158,6 +158,15 @@
   font-size: 0.8125rem;
   line-height: 1.25rem;
 }
+.text-label-caps {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+.font-label-caps {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
 
 /* Selection and scrollbar */
 ::selection {

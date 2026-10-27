@@ -148,7 +148,7 @@ export default function SignUpPage() {
                 </p>
                 <div className="flex gap-3 justify-center">
                   <Link
-                    href="/"
+                    href="/dashboard"
                     className="px-6 py-2.5 rounded-lg bg-[#FF5E1E] text-white font-semibold text-sm hover:bg-[#e04e12] transition-colors shadow-lg"
                   >
                     Enter Workspace Console

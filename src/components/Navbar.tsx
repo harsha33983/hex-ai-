@@ -82,8 +82,8 @@ export default function Navbar({ onOpenAuth }: NavbarProps) {
               Start Your Journey
             </Link>
             <Link
-              href="/sign-in"
-              aria-label="User Account"
+              href="/dashboard"
+              aria-label="Player Console"
               className="w-8 h-8 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center text-court-blaze hover:border-court-blaze transition-colors cursor-pointer"
             >
               <span className="material-symbols-outlined text-[18px]">person</span>
